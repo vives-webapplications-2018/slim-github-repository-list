@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e16cb7781829836a704bd8767830833",
+    "content-hash": "a62ff7146a503e056359fe6b53c673bf",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -358,6 +358,36 @@
             "time": "2016-10-10T12:19:37+00:00"
         },
         {
+            "name": "sillevl/vives-html-lib-exercise",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:vives-webapplications-2018/htmllib-sillevl.git",
+                "reference": "a9811c5917142e2d755c6e46758aa4b7570cb556"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vives-webapplications-2018/htmllib-sillevl/zipball/a9811c5917142e2d755c6e46758aa4b7570cb556",
+                "reference": "a9811c5917142e2d755c6e46758aa4b7570cb556",
+                "shasum": ""
+            },
+            "require": {
+                "vlucas/phpdotenv": "^2.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "sillevl\\": "lib/"
+                }
+            },
+            "description": "Example component library with HTML library, Materialize and Github",
+            "support": {
+                "source": "https://github.com/vives-webapplications-2018/htmllib-sillevl/tree/master",
+                "issues": "https://github.com/vives-webapplications-2018/htmllib-sillevl/issues"
+            },
+            "time": "2018-10-08T17:52:09+00:00"
+        },
+        {
             "name": "slim/php-view",
             "version": "2.2.0",
             "source": {
@@ -476,6 +506,56 @@
                 "router"
             ],
             "time": "2018-09-16T10:54:21+00:00"
+        },
+        {
+            "name": "vlucas/phpdotenv",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlucas/phpdotenv.git",
+                "reference": "54d599d414f8cf3f6129e287acaf44b610486aa1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/54d599d414f8cf3f6129e287acaf44b610486aa1",
+                "reference": "54d599d414f8cf3f6129e287acaf44b610486aa1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35 || ^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dotenv\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Vance Lucas",
+                    "email": "vance@vancelucas.com",
+                    "homepage": "http://www.vancelucas.com"
+                }
+            ],
+            "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
+            "time": "2018-08-22T19:34:05+00:00"
         }
     ],
     "packages-dev": [
@@ -1868,8 +1948,10 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "sillevl/vives-html-lib-exercise": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
